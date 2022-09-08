@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 1042 575" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+<svg width="100%" height="100%" viewBox="0 0 1042 638" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
     <g transform="matrix(1,0,0,1,-82.2555,-150.211)">
         <g id="SH-wg" transform="matrix(-1,1.22465e-16,-1.22465e-16,-1,1634,805.261)">
             <g transform="matrix(0.321809,0,0,0.290277,867.599,57.8116)">
@@ -402,6 +402,12 @@
                 <path d="M647.757,494.652L685.257,513.402L647.757,532.152L647.757,494.652Z"/>
                 <path d="M602.093,513.402L655.257,513.402" style="fill:none;stroke:black;stroke-width:12.5px;stroke-linecap:butt;"/>
             </g>
+        </g>
+        <g transform="matrix(1,0,0,1,135.385,651.248)">
+            <text x="424.825px" y="136.434px" style="font-family:'IBMPlexSans', 'IBM Plex Sans', sans-serif;font-size:50px;">A</text>
+        </g>
+        <g transform="matrix(1,0,0,1,408.164,651.248)">
+            <text x="424.825px" y="136.434px" style="font-family:'IBMPlexSans', 'IBM Plex Sans', sans-serif;font-size:50px;">B</text>
         </g>
     </g>
     <defs>
