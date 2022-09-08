@@ -20,16 +20,15 @@ The following factors need to be considered:
 - The device should be placed close to the NMEA 2000 network.
   The maximum allowed length of a drop cable is 6 m.
 
-FIXME: Discuss SeaTalk NG drop cable!
-
 FIXME: location for the following description?
 
 NMEA 2000 networks come in many different variants. "Micro" cabling with micro connectors is the most common for smaller boats, and is expected in this manual.
 Advanced installations may use mini or mid cables that have much larger diameter cables and heftier connectors.
 These allow for longer network installations without an excessive voltage drop.
 Furthermore, some vendor-specific variants exist as well.
-Raymarine's SeaTalk NG is probably the most common one.
+Raymarine's [SeaTalk NG](https://www.raymarine.com/view/index-id=400.html) is probably the most common one.
 It uses proprietary connectors but is otherwise fully compatible with a standard NMEA 2000 network.
+Adapter cables can be used for connecting regular NMEA 2000 devices to a STNG network and vice versa.
 
 The figure below shows a schematic illustration of a typical NMEA 2000 network.
 
@@ -79,14 +78,7 @@ A piece of two-sided tape can also be used to attach the device on a surface.
 
 Alternative mounting methods include zip-ties or just leaving the device hanging from the network T-connector.
 
-## WiFi setup
-
-- captive portal
-- client mode
-- access point
-- changing the settings
-
-- describe the AP and client modes
+## WiFi Setup
 
 SH-wg can be configured to create a WiFi access point of its own, or to connect as a client to an existing access point.
 These two setups are described in the figures below.
@@ -96,13 +88,13 @@ These two setups are described in the figures below.
 
 On left, we have a device working in access point mode.
 The client devices connect directly to this access point and communicate with it directly.
-Client devices can also communicate with each other using the SH-wg as a switch, albeit with a limited performance.
+Client devices can also communicate with each other via the SH-wg access point, albeit with a limited performance.
 No internet connectivity is provided to any of the devices.
-The amount of clients is limited by the SH-wg to a maximum of 4. FIXME: Check the actual limit!
+The number of clients is limited by the SH-wg to a maximum of 4. FIXME: Check the actual limit!
 
 On right, we have a typical setup with a separate WiFi router device.
 The router creates its own WiFi access point and all client devices connect to it.
-Devices communicate with SH-wg using the router as a switch.
+Devices communicate with SH-wg via the access point.
 Internet connectivity can be optionally provided by the router.
 
 ### Common Steps
@@ -160,6 +152,14 @@ FIXME: LED status indication?
 Once the initial configuration has been performed, changing the WiFi settings can be performed in two ways.
 First, you can reset the device to factory defaults by following the instructions in Section XXX and then completing the initial setup again.
 Or, second, you can enter the device configuration page and update the settings there. This is described in Section XXX.
+
+## Resetting the Device
+
+If you ever feel you need to start over from the beginning, you can reset the device to factory defaults by using the provided magnet.
+Slide the magnet along the side of the device close to the green lights until the red power LED turns off.
+Keep the magnet there for 10 seconds (count slowly to 15 to be sure) and then remove it.
+The LEDs will flash and the blue LED will start blinking, indicating that the configuration access point is active.
+Follow the instructions in section [WiFi Setup](#wifi-setup) above to restart the initial setup.
 
 ## Use Case: Transmit NMEA 2000 Data to Apps
 
