@@ -4,7 +4,7 @@ title: Configuration
 nav_order: 3000
 ---
 
-# Device Configuration
+# Configuration
 
 Initial device setup is described in the [Getting Started](/pages/getting_started/) section.
 This section focuses on how to configure the device once it is up and running.

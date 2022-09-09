@@ -4,7 +4,7 @@ title: Protocols and Data Formats
 nav_order: 4000
 ---
 
-# Protocols and data formats
+# Protocols and Data Formats
 
 ## TCP and UDP
 

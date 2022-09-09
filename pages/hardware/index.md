@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Hardware
+title: Hardware Description
 nav_order: 4000
 ---
 
