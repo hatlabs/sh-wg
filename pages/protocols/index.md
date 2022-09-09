@@ -10,11 +10,11 @@ nav_order: 4000
 
 SH-wg supports data transmission both over TCP and UDP.
 TCP and UDP are standard Internet data transmission protocols.
-TCP is a connection-oriented protocol, meaning that a client such as a tablet or a phone must first establish a connection with the server (the SH-wg device) before any data can be transmitted.
+[TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol) is a connection-oriented protocol, meaning that a client such as a tablet or a phone must first establish a connection with the server (the SH-wg device) before any data can be transmitted.
 Establishing and maintaining a connection requires some additional processing overhead, but also guarantees that the data is delivered reliably.
 Additionally, the client device must know the hostname or the IP address of the server.
 
-UDP is a connectionless protocol, meaning that devices can send data to each other without first establishing a connection.
+[UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol) is a connectionless protocol, meaning that devices can send data to each other without first establishing a connection.
 No overhead is required to establish a connection, but data can be lost if the network is congested.
 This is rarely a problem in local networks, however.
 Additionally, UDP supports broadcasting, meaning that data can be sent to all devices on the same network without any additional overhead.

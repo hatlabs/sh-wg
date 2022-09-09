@@ -30,7 +30,7 @@ nav_order: 5000
 
 | WiFi Radio |           |
 |------------|-----------|
-| Radio Module | ESP32-WROOM32 |
+| Radio Module | ESP32-WROOM32 ([datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf)) |
 | Compatibility | IEEE 802.11 b/g/n |
 | Bit Rate (Mbps) | up to 150 |
 | Frequency Band (GHz) | 2.4 |
