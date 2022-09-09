@@ -20,50 +20,9 @@ The following factors need to be considered:
 - The device should be placed close to the NMEA 2000 network.
   The maximum allowed length of a drop cable is 6 m.
 
-FIXME: location for the following description?
+If you don't know much about NMEA 2000 or would like to have a refresher, have a look at the [NMEA 2000 Primer](../nmea2000_primer/) before proceeding.
 
-NMEA 2000 networks come in many different variants. "Micro" cabling with micro connectors is the most common for smaller boats, and is expected in this manual.
-Advanced installations may use mini or mid cables that have much larger diameter cables and heftier connectors.
-These allow for longer network installations without an excessive voltage drop.
-Furthermore, some vendor-specific variants exist as well.
-Raymarine's [SeaTalk NG](https://www.raymarine.com/view/index-id=400.html) is probably the most common one.
-It uses proprietary connectors but is otherwise fully compatible with a standard NMEA 2000 network.
-Adapter cables can be used for connecting regular NMEA 2000 devices to a STNG network and vice versa.
-
-The figure below shows a schematic illustration of a typical NMEA 2000 network.
-
-<img src="media/nmea2000-diagram.svg" width="80%" />
-
-The figure components are:
-
-<dl>
-<dt>A</dt>
-<dd>A display device such as a Multi-function Display (MFD).</dd>
-<dt>B</dt>
-<dd>A wind sensor.</dd>
-<dt>C</dt>
-<dd>A temperature sensor.</dd>
-<dt>D</dt>
-<dd>A SH-wg device.</dd>
-<dt>1</dt>
-<dd>N2K power cable. Every NMEA 2000 network segment must be connected to boat's 12 V power system.
-   The power cable must be fused with a 3 A fuse.</dd>
-<dt>2</dt>
-<dd>Network male and female terminators.
-   The network backbone must be terminated with 120 ohm resistors for proper network operation.</dd>
-<dt>3</dt>
-<dd>Drop cables are connected to the backbone using T-connectors.
-   Special 4-way T-connectors are also available for connecting multiple devices to the backbone.</dd>
-<dt>4</dt>
-<dd>Backbone cables extend the backbone. The maximum length of the network, measured from terminator to terminator,
-   should not exceed 100 m.</dd>
-<dt>5</dt>
-<dd>Drop cables connect individual devices to the backbone.
-   The maximum length of the drop cable is 6 m.</dd>
-
-</dl>
-
-SH-wg can be connected either directly to a backbone T-connector or using a standard drop cable.
+SH-wg can be connected to the NMEA 2000 network either using a standard drop cable or directly to a backbone T-connector.
 
 If you decide to mount the device permanently, take a photo of the bottom sticker for future reference.
 
@@ -90,7 +49,7 @@ On left, we have a device working in access point mode.
 The client devices connect directly to this access point and communicate with it directly.
 Client devices can also communicate with each other via the SH-wg access point, albeit with a limited performance.
 No internet connectivity is provided to any of the devices.
-The number of clients is limited by the SH-wg to a maximum of 4. FIXME: Check the actual limit!
+You can have a maximum of 4 simultaneous client devices connected at any time.
 
 On right, we have a typical setup with a separate WiFi router device.
 The router creates its own WiFi access point and all client devices connect to it.
@@ -122,9 +81,7 @@ First, follow the steps in the "Common Steps" section above.
 Click the "Configure WiFi" button.
 You'll get a list of nearby WiFi networks.
 
-<img src="media/wifi_configuration.jpg" width="70%" />
-
-FIXME: Outdated image.
+<img src="media/wifi_configuration.png" width="70%" />
 
 One of them should be the boat network you want to connect to.
 Select that and enter the network password.
@@ -141,11 +98,11 @@ Click the "Configure WiFi" button.
 Now, ignore the list of WiFi networks.
 Instead, type in the desired WiFi Access Point name and password in the "Custom Access Point SSID" and "Custom Access Point Password" fields, respectively.
 
-XXX Insert Figure XXX here.
+In the figure below, we have configured the access point name to be "My Access Point".
+
+<img src="media/wifi_custom_ap.png" width="70%" />
 
 Click "save".
-
-FIXME: LED status indication?
 
 ### Changing WiFi Settings
 
