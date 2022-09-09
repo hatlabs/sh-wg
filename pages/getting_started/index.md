@@ -107,8 +107,8 @@ Click "save".
 ### Changing WiFi Settings
 
 Once the initial configuration has been performed, changing the WiFi settings can be performed in two ways.
-First, you can reset the device to factory defaults by following the instructions in Section XXX and then completing the initial setup again.
-Or, second, you can enter the device configuration page and update the settings there. This is described in Section XXX.
+First, you can reset the device to factory defaults by following the instructions in the section below and then completing the initial setup again.
+Or, second, you can enter the device configuration page and update the settings there. This is described in [Configuration](../configuration/).
 
 ## Resetting the Device
 
