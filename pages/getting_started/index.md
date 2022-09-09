@@ -203,7 +203,7 @@ Signal K is an open data format and data exchange platform for marine use.
 It allows sharing data between different devices and apps and enables exciting features such as advanced visualization, data logging and connectivity to other open software such as OpenCPN, a popular open source chartplotter application.
 
 SH-wg can be used to connect a NMEA 2000 network to a Signal K server.
-Configure the SH-wg device as a client to the WiFi network your Signal K server is connected to.
+Configure the SH-wg device as a client to the WiFi network wo which your Signal K server is connected.
 Then, enable YDWG RAW transmitting on the device.
 Finally, connect the Signal K server to the data source.
 Open the Signal K server web user interface and navigate to "Server" -> "Data Connections".
