@@ -8,8 +8,8 @@ permalink: /
 
 ## Introduction
 
-The Sailor Hat WiFi Gateway (SH-wg) is a device that allows you to connect WiFi devices to your boat's NMEA 2000 network.
-This lets you display your boat data on phones or tablets, ... FIXME finish the introduction
+The Sailor Hat WiFi Gateway (SH-wg) allows you to connect WiFi devices to your boat's NMEA 2000 network.
+This lets you display your boat data on phones or tablets, extend the NMEA 2000 network wirelessly, or implement a bidirectional interface with Signal K marine data servers.
 
 <img src="media/sh-wg_photo_45deg.jpg" width="60%" />
 
@@ -29,5 +29,8 @@ SH-wg is available for purchase at the [Hat Labs web store](https://hatlabs.fi).
 
 ### Trademarks
 
-FIXME: Add generic trademark clause
+NMEA 2000 is a registered trademark of National Marine Electronics Association.
+SeaTalk NG is a registered trademark of Raymarine UK Limited.
+WiFi is a registered trademark of the Wi-Fi Alliance.
+All other trademarks are the property of their respective owners.
 
