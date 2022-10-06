@@ -13,10 +13,11 @@ TCP and UDP are standard Internet data transmission protocols.
 [TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol) is a connection-oriented protocol, meaning that a client such as a tablet or a phone must first establish a connection with the server (the SH-wg device) before any data can be transmitted.
 Establishing and maintaining a connection requires some additional processing overhead, but also guarantees that the data is delivered reliably.
 Additionally, the client device must know the hostname or the IP address of the server.
+When using TCP, no data is lost, and the data is delivered in the same order as it was sent.
+However, retransmission of lost packets can add some delay to the data stream.
 
 [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol) is a connectionless protocol, meaning that devices can send data to each other without first establishing a connection.
-No overhead is required to establish a connection, but data can be lost if the network is congested.
-This is rarely a problem in local networks, however.
+No overhead is required to establish a connection, but data can be lost if the network is congested or the transmitting or receiving device is busy.
 Additionally, UDP supports broadcasting, meaning that data can be sent to all devices on the same network without any additional overhead.
 Listening devices just need to know the port number to listen to the traffic.
 SH-wg utilizes this feature for transmitting data in the local network.
@@ -24,13 +25,13 @@ SH-wg utilizes this feature for transmitting data in the local network.
 ## Data Protocols
 
 SH-wg is able to translate messages received over the NMEA 2000 network into NMEA 0183 sentences.
-The NMEA 0183 sentences are by default broadcast over UDP and also transmitted over a TCP server.
+The NMEA 0183 sentences are by default broadcast over UDP and also provided over a TCP server.
 The supported NMEA 2000 and NMEA 0183 sentences are listed in [Specifications](../specifications/).
 
 [YDWG RAW](https://www.yachtd.com/downloads/ydwg02.pdf) is a open data protocol defined by Yacht Devices Ltd. for their YDWG-02 series of devices.
 It transmits raw NMEA 2000 messages over TCP or UDP with a simple encoding.
 SH-wg by default broadcasts the YDWG RAW protocol over UDP and serves it over TCP.
-Bidirectional use (receiving messages over UDP) can be enabled in the configuration page.
+Bidirectional use (both transmitting and receiving of messages) can be enabled in the configuration page for either protocol.
 
 [SeaSmart.Net](http://www.seasmart.net/pdf/SeaSmart_HTTP_Protocol_RevG_043012.pdf) is a data transmission protocol that encapsulates NMEA 2000 messages in NMEA 0183 sentences.
 The protocol can be enabled in the device configuration page.
