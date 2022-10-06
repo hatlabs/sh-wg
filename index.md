@@ -29,8 +29,7 @@ SH-wg is available for purchase at the [Hat Labs web store](https://hatlabs.fi).
 
 ### Trademarks
 
-NMEA 2000 is a registered trademark of National Marine Electronics Association.
+NMEA 0183 and NMEA 2000 are registered trademarks of National Marine Electronics Association.
 SeaTalk NG is a registered trademark of Raymarine UK Limited.
 WiFi is a registered trademark of the Wi-Fi Alliance.
 All other trademarks are the property of their respective owners.
-
