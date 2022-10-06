@@ -140,17 +140,31 @@ In these cases, a wireless NMEA 2000 bridge can be used to connect two separate 
 
 Two devices are needed.
 Let's call them device A and B.
-Device A is connected to the existing NMEA 2000 network segment and configured as an access point.
-Additionally, YDWG RAW transmitting must be enabled on device A.
-A new NMEA 2000 network segment is created in the new location and device B is connected to it.
-Device B is configured as a client to connect to the access point created by device A.
-When setting up device B, it is useful to give it a unique hostname such as "sh-wg-b".
-YDWG RAW transmitting needs to be enabled on device B as well.
 
+Device A is connected to the existing NMEA 2000 network segment and configured as an access point.
+The device should have a unique hostname.
+`sh-wg-a` is used as an example.
+The hostname can be configured either during the initial configuration or later via the configuration page.
+Device A should also have YDWG RAW TCP server configured to both Transmit and Receive.
+Other transmission modes can be turned off or according to the user's needs.
+
+<img src="media/ydwg_raw_tcp_server_config.jpg" width="50%" />
+
+A new NMEA 2000 network segment is created in the new location and device B is connected to it.
+Device B is configured as a WiFi client to connect to the access point created by device A.
+When setting up device B, unique hostname such as `sh-wg-b` should be used.
+
+Next, the device B should be configured as a TCP client to connect to the YDWG RAW TCP server on device A.
+The hostname of device A should be used as the server address.
+If the hostname of device A is `sh-wg-a`, then the server address should be `sh-wg-a.local`.
+
+<img src="media/ydwg_raw_tcp_client_config.jpg" width="50%" />
+
+Now, restart the both devices.
 At this point, devices should pick up and forward each other's NMEA 2000 messages.
 
 A wireless bridge is not limited to two SH-wg devices.
-Multiple devices can be used to connect multiple NMEA 2000 network segments.
+Multiple client devices can be used to connect multiple NMEA 2000 network segments with each other.
 
 ## Use Case: Wireless Signal K Interface
 
@@ -161,11 +175,16 @@ It allows sharing data between different devices and apps and enables exciting f
 
 SH-wg can be used to connect a NMEA 2000 network to a Signal K server.
 Configure the SH-wg device as a client to the WiFi network wo which your Signal K server is connected.
-Then, enable YDWG RAW transmitting on the device.
+Then, enable YDWG RAW TCP server with both Transmit and Receive on the device.
+Once you have done all this, click Save and restart the device.
+
+<img src="media/ydwg_raw_tcp_server_config.jpg" width="50%" />
+
 Finally, connect the Signal K server to the data source.
 Open the Signal K server web user interface and navigate to "Server" -> "Data Connections".
-If the SH-wg device is connected to the same WiFi and transmitting, it should be automatically discovered as "YDWG-02-UDP".
-This connection needs to be enabled. 
-Select it by clicking on the item. Then, click the "Enable" checkbox and click "Apply".
-Finally, restart the server by clicking "Restart" in the upper right corner.
-You should now see "YDWG-02-UDP" in the "Connection activity" listing.
+Click "Add" to create a new connection.
+Data Type should be "NMEA 2000".
+Enter "shwg" in the "ID" field.
+NMEA 2000 Source should be "Yacht Devices RAW TCP (canboatjs)".
+Click Apply and then restart the server by clicking Restart on the top right corner of the page.
+You should now see your new "shwg" data source in the Connection activity listing on the SK server Dashboard.
