@@ -25,7 +25,7 @@ Use cases of SH-wg include:
 
 SH-wg is open hardware and both the [electronics hardware design](https://github.com/hatlabs/SH-wg-hardware) files and [software source code](https://github.com/hatlabs/SH-wg-firmware) are available on GitHub for free download and customization.
 
-SH-wg is available for purchase at the [Hat Labs web store](https://hatlabs.fi).
+SH-wg is available for purchase at the [Hat Labs web store](https://hatlabs.fi/product/sh-wg/).
 
 ### Trademarks
 
