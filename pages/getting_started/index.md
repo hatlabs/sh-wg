@@ -20,7 +20,7 @@ The following factors need to be considered:
 - The device should be placed close to the NMEA 2000 network.
   The maximum allowed length of a drop cable is 6 m.
 
-If you don't know much about NMEA 2000 or would like to have a refresher, have a look at the [NMEA 2000 Primer](../nmea2000_primer/) before proceeding.
+If you don't know much about NMEA 2000 or would like to have a refresher, have a look at the [NMEA 2000 Primer](../nmea_primer/) before proceeding.
 
 SH-wg can be connected to the NMEA 2000 network either using a standard drop cable or directly to a backbone T-connector.
 
