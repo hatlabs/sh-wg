@@ -1,9 +1,3 @@
----
-layout: default
-title: Specifications
-nav_order: 5000
----
-
 # Specifications
 
 | Mechanical |           |

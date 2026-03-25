@@ -1,9 +1,3 @@
----
-layout: default
-title: NMEA Primer
-nav_order: 4500
----
-
 # NMEA Primer
 
 NMEA 2000 and NMEA 0183 are the most common standards for marine data transmission.
@@ -55,7 +49,7 @@ When adding devices to an existing network, a T-connector and a drop cable of ap
 
 The figure below shows a schematic illustration of a typical NMEA 2000 network.
 
-<img src="media/nmea2000-diagram.svg" width="80%" />
+![](media/nmea2000-diagram.svg){ width="80%" }
 
 The figure components are:
 
