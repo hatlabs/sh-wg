@@ -1,9 +1,3 @@
----
-layout: default
-title: Support and Warranty
-nav_order: 6000
----
-
 # Support and Warranty
 
 The Hat Labs [discussion forum](https://github.com/hatlabs/discussions/discussions/) is the best place to ask questions and get help with SH-wg.

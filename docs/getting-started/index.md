@@ -1,9 +1,3 @@
----
-layout: default
-title: Getting Started
-nav_order: 2000
----
-
 # Getting Started
 
 ## Physical installation: Mounting and connecting to N2K
@@ -20,7 +14,7 @@ The following factors need to be considered:
 - The device should be placed close to the NMEA 2000 network.
   The maximum allowed length of a drop cable is 6 m.
 
-If you don't know much about NMEA 2000 or would like to have a refresher, have a look at the [NMEA 2000 Primer](../nmea_primer/) before proceeding.
+If you don't know much about NMEA 2000 or would like to have a refresher, have a look at the [NMEA 2000 Primer](../nmea-primer/index.md) before proceeding.
 
 SH-wg can be connected to the NMEA 2000 network either using a standard drop cable or directly to a backbone T-connector.
 
@@ -29,11 +23,15 @@ If you decide to mount the device permanently, take a photo of the bottom sticke
 The device can be mounted on a surface with screws.
 Remove the lid temporarily and attach the device using two screws (3.5 mm or smaller) through the mounting holes.
 
-<img src="media/SH-wg_line_drawing_screws.png" width="49%" />
+<figure markdown="span">
+![](media/SH-wg_line_drawing_screws.png){ width="49%" }
+</figure>
 
 A piece of two-sided tape can also be used to attach the device on a surface.
 
-<img src="media/SH-wg_line_drawing_tape.png" width="49%" />
+<figure markdown="span">
+![](media/SH-wg_line_drawing_tape.png){ width="49%" }
+</figure>
 
 Alternative mounting methods include zip-ties or just leaving the device hanging from the network T-connector.
 
@@ -42,8 +40,10 @@ Alternative mounting methods include zip-ties or just leaving the device hanging
 SH-wg can be configured to create a WiFi access point of its own, or to connect as a client to an existing access point.
 These two setups are described in the figures below.
 
-<img src="media/wifi_access_point_mode.svg" width="49%" />
-<img src="media/wifi_client_mode.svg" width="49%" />
+<figure markdown="span">
+![](media/wifi_access_point_mode.svg){ width="49%" }
+![](media/wifi_client_mode.svg){ width="49%" }
+</figure>
 
 On left, we have a device working in access point mode.
 The client devices connect directly to this access point and communicate with it directly.
@@ -64,7 +64,9 @@ The user can connect to the captive portal and set the WiFi configuration.
 When the configuration portal is activated, the blue LED is blinking.
 The device is visible on the computer's WiFi network listing:
 
-<img src="media/wifi_selection.jpg" width="40%" />
+<figure markdown="span">
+![](media/wifi_selection.jpg){ width="40%" }
+</figure>
 
 The network name is "Configure sh-wg-xxxxxxxxxxxx", the last 12 digits corresponding to the device unique identifier.
 When conneting to the captive portal, you also need to provide a password to connect to the configuration portal. The password is "abcdabcd".
@@ -72,7 +74,9 @@ When conneting to the captive portal, you also need to provide a password to con
 
 Once you have successfully connected to the configuration portal, you should be automatically presented with the WiFi configuration front page:
 
-<img src="media/captive_portal_front_page.jpg" width="70%" />
+<figure markdown="span">
+![](media/captive_portal_front_page.jpg){ width="70%" }
+</figure>
 
 ### Configuring WiFi Client Mode
 
@@ -81,7 +85,9 @@ First, follow the steps in the "Common Steps" section above.
 Click the "Configure WiFi" button.
 You'll get a list of nearby WiFi networks.
 
-<img src="media/wifi_configuration.png" width="70%" />
+<figure markdown="span">
+![](media/wifi_configuration.png){ width="70%" }
+</figure>
 
 One of them should be the boat network you want to connect to.
 Select that and enter the network password.
@@ -100,7 +106,9 @@ Instead, type in the desired WiFi Access Point name and password in the "Custom 
 
 In the figure below, we have configured the access point name to be "My Access Point".
 
-<img src="media/wifi_custom_ap.png" width="70%" />
+<figure markdown="span">
+![](media/wifi_custom_ap.png){ width="70%" }
+</figure>
 
 Click "save".
 
@@ -108,7 +116,7 @@ Click "save".
 
 Once the initial configuration has been performed, changing the WiFi settings can be performed in two ways.
 First, you can reset the device to factory defaults by following the instructions in the section below and then completing the initial setup again.
-Or, second, you can enter the device configuration page and update the settings there. This is described in [Configuration](../configuration/).
+Or, second, you can enter the device configuration page and update the settings there. This is described in [Configuration](../configuration/index.md).
 
 ## Resetting the Device
 
@@ -120,7 +128,9 @@ Follow the instructions in section [WiFi Setup](#wifi-setup) above to restart th
 
 ## Use Case: Transmit NMEA 2000 Data to Apps
 
-<img src="media/nmea2000-to-apps.svg" width="80%" />
+<figure markdown="span">
+![](media/nmea2000-to-apps.svg){ width="80%" }
+</figure>
 
 Transmitting boat device data to different wireless devices and apps is a common SH-wg use case.
 The WiFi may be configured either as a client or as an access point.
@@ -130,7 +140,9 @@ Some apps such as Boating pick up the transmissions automatically while others s
 
 ## Use Case: Wireless NMEA 2000 Bridge
 
-<img src="media/nmea2000-to-nmea2000.svg" width="80%" />
+<figure markdown="span">
+![](media/nmea2000-to-nmea2000.svg){ width="80%" }
+</figure>
 
 Two SH-wg devices can be used to create a wireless NMEA 2000 bridge.
 This setup is useful when the boat's NMEA 2000 network is not accessible from the desired location.
@@ -148,7 +160,9 @@ The hostname can be configured either during the initial configuration or later 
 Device A should also have YDWG RAW TCP server configured to both Transmit and Receive.
 Other transmission modes can be turned off or according to the user's needs.
 
-<img src="media/ydwg_raw_tcp_server_config.jpg" width="50%" />
+<figure markdown="span">
+![](media/ydwg_raw_tcp_server_config.jpg){ width="50%" }
+</figure>
 
 A new NMEA 2000 network segment is created in the new location and device B is connected to it.
 Device B is configured as a WiFi client to connect to the access point created by device A.
@@ -158,7 +172,9 @@ Next, the device B should be configured as a TCP client to connect to the YDWG R
 The hostname of device A should be used as the server address.
 If the hostname of device A is `sh-wg-a`, then the server address should be `sh-wg-a.local`.
 
-<img src="media/ydwg_raw_tcp_client_config.jpg" width="50%" />
+<figure markdown="span">
+![](media/ydwg_raw_tcp_client_config.jpg){ width="50%" }
+</figure>
 
 Now, restart the both devices.
 At this point, devices should pick up and forward each other's NMEA 2000 messages.
@@ -168,7 +184,9 @@ Multiple client devices can be used to connect multiple NMEA 2000 network segmen
 
 ## Use Case: Wireless Signal K Interface
 
-<img src="media/nmea2000-to-sk.svg" width="80%" />
+<figure markdown="span">
+![](media/nmea2000-to-sk.svg){ width="80%" }
+</figure>
 
 Signal K is an open data format and data exchange platform for marine use.
 It allows sharing data between different devices and apps and enables exciting features such as advanced visualization, data logging and connectivity to other open software such as OpenCPN, a popular open source chartplotter application.
@@ -178,7 +196,9 @@ Configure the SH-wg device as a client to the WiFi network wo which your Signal 
 Then, enable YDWG RAW TCP server with both Transmit and Receive on the device.
 Once you have done all this, click Save and restart the device.
 
-<img src="media/ydwg_raw_tcp_server_config.jpg" width="50%" />
+<figure markdown="span">
+![](media/ydwg_raw_tcp_server_config.jpg){ width="50%" }
+</figure>
 
 Finally, connect the Signal K server to the data source.
 Open the Signal K server web user interface and navigate to "Server" -> "Data Connections".

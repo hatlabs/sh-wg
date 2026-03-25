@@ -1,9 +1,3 @@
----
-layout: default
-title: Hacking
-nav_order: 7000
----
-
 # Hacking
 
 SH-wg is [open hardware](https://github.com/hatlabs/SH-wg-hardware) and [open software](https://github.com/hatlabs/SH-wg-firmware).

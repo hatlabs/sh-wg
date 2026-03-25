@@ -1,9 +1,3 @@
----
-layout: default
-title: Protocols and Data Formats
-nav_order: 4000
----
-
 # Protocols and Data Formats
 
 ## TCP and UDP
@@ -26,7 +20,7 @@ SH-wg utilizes this feature for transmitting data in the local network.
 
 SH-wg is able to translate messages received over the NMEA 2000 network into NMEA 0183 sentences.
 The NMEA 0183 sentences are by default broadcast over UDP and also provided over a TCP server.
-The supported NMEA 2000 and NMEA 0183 sentences are listed in [Specifications](../specifications/).
+The supported NMEA 2000 and NMEA 0183 sentences are listed in [Specifications](../specifications/index.md).
 
 [YDWG RAW](https://www.yachtd.com/downloads/ydwg02.pdf) is a open data protocol defined by Yacht Devices Ltd. for their YDWG-02 series of devices.
 It transmits raw NMEA 2000 messages over TCP or UDP with a simple encoding.
